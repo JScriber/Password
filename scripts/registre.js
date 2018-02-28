@@ -19,7 +19,7 @@ function luncher(){
 	deverouillage('P@ssword');
 }
 function deverouillage(password){
-	var secureInput = document.getElementById('secureInput');
+	var secureInput = document.getElementById('password');
 	var essais = 1;
 	secureInput.addEventListener('keyup', function(e){
 		if(e.which == 13){

@@ -133,6 +133,16 @@ body
 	overflow: hidden;
 	z-index: 5;
 }
+@keyframes moveToRight {
+	from
+	{
+		transform: translateX(-280px);
+	}
+	to
+	{
+		transform: translateX(0);
+	}
+}
 #conteneur > nav
 {
 	position: relative;
@@ -141,6 +151,7 @@ body
 	overflow-y: scroll;
 	width: 280px;
 	height: 100%;
+	animation: moveToRight .3s linear forwards;
 }
 #conteneur > nav ul
 {
